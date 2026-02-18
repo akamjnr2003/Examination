@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://aframe.io/releases/1.7.1/aframe.min.js"></script>
+    <script src="https://www.gstatic.com/draco/v1/decoders/draco_decoder.js"></script>
+</head>
+<body>
+    <a-scene >
+        
+        <a-assets>
+            <a-asset-item id="home" src="./assets/alfred-compressed.glb"></a-asset-item>
+        </a-assets>
+
+
+        <a-camera position="-22 6  130" wasd-controls="enabled: true; acceleration: 200"></a-camera>
+        <a-entity gltf-model="#home" position="-40 0 0" scale="0.1 0.1 0.1"></a-entity>
+    </a-scene>
+</body>
+</html>
